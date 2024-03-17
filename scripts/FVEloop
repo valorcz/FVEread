@@ -4,7 +4,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 while true; do
 	#echo "running FVEread"	
-	${SCRIPT_DIR}/FVEread
+	"${SCRIPT_DIR}"/FVEread
 	#echo "sleep"
 	sleep 5
 done

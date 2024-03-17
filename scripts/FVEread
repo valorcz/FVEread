@@ -1,4 +1,7 @@
 #!/bin/bash
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+# TODO: Perhaps we could work with SCRIPT_DIR
 if [ -e /opt/fve/.FVErc ]; then 
 	source /opt/fve/.FVErc
 	FVErc="/opt/fve/.FVErc"
