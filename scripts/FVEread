@@ -1,5 +1,9 @@
 #!/bin/bash
-if [ -e $HOME/.FVErc ]; then 
+if [ -e /opt/fve/.FVErc ]; then 
+	source /opt/fve/.FVErc
+	FVErc="/opt/fve/.FVErc"
+	source "$FVEBINDIR"/FVEcomFncs
+elif [ -e $HOME/.FVErc ]; then 
 	source $HOME/.FVErc
 	FVErc="$HOME/.FVErc"
 	source "$FVEBINDIR"/FVEcomFncs
